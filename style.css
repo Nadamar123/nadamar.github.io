@@ -1,0 +1,71 @@
+/*#preloader {
+  background: #000 url(projects/Bounce-Bar-Preloader-1.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}*/
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #b4cbf0;
+}
+.jumbotron h1,
+p {
+  text-transform: uppercase;
+  display: block;
+}
+.jumbotron h1 {
+  animation: text 3s infinite;
+}
+@keyframes text {
+  from {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.rounded-circle {
+  border: 3px solid black;
+}
+#about {
+  background-color: #273036;
+  color: #b4cbf0;
+}
+.nav-link {
+  color: #000000;
+  background-color: #78c9f8;
+}
+.nav-link:hover {
+  color: #1cceed;
+  background-color: #95a69a;
+}
+#projects {
+  color: #273036;
+}
+#contact {
+  background-color: plum;
+  color: #0a316e;
+}
+.btn {
+  background-color: #b4cbf0;
+  border: 1px solid #606d83;
+  color: black;
+}
+.btn:hover {
+  background-color: black;
+  color: #b4cbf0;
+  border: 1px solid black;
+}
+section {
+  padding-top: 5rem;
+}
