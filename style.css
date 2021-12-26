@@ -8,6 +8,17 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 13px;
+  background: #273036;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6fbac7;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
 .topbtn {
   position: fixed;
   width: 60px;
@@ -60,7 +71,7 @@ p {
 }
 .nav-link {
   color: #000000;
-  background-color: #78c9f8;
+  background-color: #7c75ff;
 }
 .nav-link:hover {
   color: #1cceed;
