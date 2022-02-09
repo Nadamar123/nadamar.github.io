@@ -1,10 +1,3 @@
-/*#preloader {
-  background: #000 url(projects/Bounce-Bar-Preloader-1.gif) no-repeat center center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}*/
 html {
   scroll-behavior: smooth;
 }
@@ -62,8 +55,34 @@ p {
     transform: scale(1);
   }
 }
-.rounded-circle {
-  border: 3px solid black;
+.logo {
+  width: 100px;
+  height: 80px;
+  position: relative;
+}
+.logo img {
+  max-width: 100%;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  outline: 3px dashed #ff7a00;
+  outline-offset: 3px;
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.display-4 {
+  margin-top: 75px;
+}
+.lead {
+  margin-top: 10px;
 }
 #about {
   background-color: #273036;
@@ -71,7 +90,7 @@ p {
 }
 .nav-link {
   color: #000000;
-  background-color: #7c75ff;
+  background-color: #677c9e;
 }
 .nav-link:hover {
   color: #1cceed;
@@ -82,17 +101,43 @@ p {
 }
 #contact {
   background-color: plum;
-  color: #0a316e;
+  color: #a0c0f3;
 }
-.btn {
+.ciw {
+  background-color: #573c56;
+  margin: 20px auto 0;
+  padding: 15px;
+  border-radius: 20px;
+}
+#name {
+  border-radius: 35px;
+}
+#email {
+  border-radius: 35px;
+}
+#message {
+  border-radius: 20px;
+}
+
+/*.btn {
   background-color: #b4cbf0;
   border: 1px solid #606d83;
   color: black;
-}
+}*/
 .btn:hover {
-  background-color: black;
-  color: #b4cbf0;
-  border: 1px solid black;
+  background-color: #c2d9ff;
+  color: #000000;
+  border: 2px solid #c2d9ff;
+}
+.card-body {
+  background-color: #9ba0a8;
+}
+.card {
+  box-shadow: 5px 5px 5px;
+}
+.form-control {
+  border: 2px solid #9ba0a8;
+  color: black;
 }
 section {
   padding-top: 5rem;
