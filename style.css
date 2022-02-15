@@ -100,14 +100,26 @@ p {
   color: #273036;
 }
 #contact {
-  background-color: plum;
-  color: #a0c0f3;
+  background-color: #dda0dd;
+  color: #4e85dd;
 }
 .ciw {
-  background-color: #573c56;
-  margin: 20px auto 0;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  border: solid 2-x transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  /*margin: 20px auto 20px;*/
+  margin-left: 120px;
   padding: 15px;
   border-radius: 20px;
+}
+.imagedoge img {
+  height: 100px;
+  width: 100px;
 }
 #name {
   border-radius: 35px;
